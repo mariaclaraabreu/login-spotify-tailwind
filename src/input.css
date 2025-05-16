@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./assets/fonts/gotham-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    @apply font-bold;
+    font-family: 'Gotham';
+}
+
+h1 {
+    @apply text-2xl;
+}
+
+h2 {
+    @apply text-xl;
+}
+
+h3 {
+    @apply text-lg;
+}
