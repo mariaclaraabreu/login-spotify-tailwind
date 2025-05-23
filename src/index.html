@@ -4,25 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exile&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../dist/output.css">
     <title>Login</title>
 </head>
 
-<body class="bg-linear-to-r from-stone-700 to-stone-950 flex justify-center">
-    <div class="w-2/5 rounded-lg bg-stone-950 p-4 text-center">
-        <img src="./assets/spotify-logo.png" alt="spotify logo">
+<body class="bg-linear-to-r bg-custom-gray-500 flex justify-center text-gray-50">
+    <div class="w-2/5 rounded-lg bg-custom-gray-600 p-4 pt-6 pb-10 text-center flex flex-col px-48 mt-6">
+        <img class="w-12 m-auto" src="./assets/spotify-logo.png" alt="spotify logo">
         <h1>Entrar no Spotify</h1>
 
-        <div>
-            <label>E-mail ou nome de usuário</label>
-            <input type="email">
+        <div class="flex flex-col gap-2 mt-8">
+            <button class="rounded-full border-gray-600 border-1 px-14 py-2 flex justify-between items-center">
+                <img class="w-4 mr-8" src="./assets/google.svg">
+                Continuar com o Google
+            </button>
+            <button class="rounded-full border-gray-400 border-1 px-14 py-2 flex justify-between items-center">
+                <img class="w-4 mr-8" src="./assets/facebook.png">
+                Continuar com o Facebook
+            </button>
+            <button class="rounded-full border-gray-400 border-1 px-14 py-2 flex justify-between items-center">
+                <img class="w-4 mr-8" src="./assets/apple.svg">
+                Continuar com a Apple
+            </button>
+            <button class="rounded-full border-gray-400 border-1 px-10 py-2 flex justify-center items-center">
+                Continuar com um número de telefone
+            </button>
         </div>
 
-        <div>
-            <label>Senha:</label>
-            <input type="password">
+        <div class="flex flex-col justify-start mt-8">
+            <label class="font-bold text-left mb-2 text-sm">E-mail ou nome de usuário</label>
+            <input class="input" type="email">
         </div>
 
+        <div class="flex flex-col justify-start mt-4 text-sm">
+            <label class="font-bold text-left mb-2">Senha:</label>
+            <input class="input" type="password">
+        </div>
+
+        <button class="bg-brand px-2 py-4 rounded-full mt-6 text-gray-950 font-bold">Continuar</button>
     </div>
 
 </body>

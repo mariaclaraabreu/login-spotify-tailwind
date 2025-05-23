@@ -1,17 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  darkMode: 'class',
-  theme: {
-    extend: {
-      colors: {
-        brand: "#b4d455"
-      },
-      fontFamily: {
-        'custom': ['Gotham'],
-      },
+
+export const content = ["./src/**/*.{html,js}"];
+export const darkMode = 'class';
+export const theme = {
+  extend: {
+    colors: {
+      // brand: "#1ED760",
+      firstBgBrand: "#121212",
+      secondBgBrand: "#272727",
+    },
+    fontFamily: {
+      gotham: ['Gotham'],
+      sakitu: ['Sakitu'],
     },
   },
-  plugins: [],
-}
+  fontFamily: {
+    sakitu: ['Sakitu'],
+  },
+};
+export const plugins = [];
 

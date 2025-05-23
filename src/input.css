@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: 'Gotham';
-    src: url('./assets/fonts/gotham-bold.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
+@theme {
+    --color-brand: #1ED760;
+    --color-custom-gray-500: #272727;
+    --color-custom-gray-600: #121212;
 }
 
 h1,
 h2,
 h3 {
     @apply font-bold;
-    font-family: 'Gotham';
+    font-family: "Montserrat", sans-serif;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    @apply text-2xl;
+    @apply text-3xl;
 }
 
 h2 {
@@ -24,4 +27,8 @@ h2 {
 
 h3 {
     @apply text-lg;
+}
+
+.input {
+    @apply border border-gray-600 h-10 py-6 px-3 rounded-sm;
 }
