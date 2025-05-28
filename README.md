@@ -16,5 +16,7 @@ The goal of this project is to practice building modern user interfaces by faith
 - Fully styled using Tailwind CSS utility classes
 - Responsive design for various screen sizes
 
+![image](https://github.com/user-attachments/assets/1f9403b8-696f-4f26-9a35-e56fbb12444e)
+
   ![image](https://github.com/user-attachments/assets/900b3cc7-6182-4f78-9933-8bd4c42bf427)
 
